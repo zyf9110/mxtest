@@ -1,0 +1,16 @@
+.rule{
+  width: 295px;
+  height: 465px;
+  align-items: center;
+}
+.smalltext{
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: absolute;
+  top: 95rpx;
+  left: 110rpx;
+  right: 120rpx;
+}

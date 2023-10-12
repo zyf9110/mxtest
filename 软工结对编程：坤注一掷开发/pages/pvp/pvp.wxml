@@ -1,0 +1,80 @@
+<view  class="gamecontainer" style="background-image:url(/image/游戏背景.jpg);background-position: center;">
+
+<!--usr1-->>
+<view >
+  <image src="/image/外框.png" class="frame frame1">
+  <image src="{{diceimage[dicearray1[0]-1]}}" class="dice dice1" data-sno="0" bindtap="Locktouzi"></image>
+  <image src="{{diceimage[dicearray1[1]-1]}}" class="dice dice2" data-sno="1" bindtap="Locktouzi"></image>
+  <image src="{{diceimage[dicearray1[2]-1]}}" class="dice dice3" data-sno="2" bindtap="Locktouzi"></image>
+  <image src="{{diceimage[dicearray1[3]-1]}}" class="dice dice4" data-sno="3" bindtap="Locktouzi"></image>
+  <image src="{{diceimage[dicearray1[4]-1]}}" class="dice dice5" data-sno="4" bindtap="Locktouzi"></image>
+  </image>
+  
+  <image src="/image/浙里助企-底框.png" class="inframe1">
+    <span class="usr1message">
+  <text>用户1信息</text>
+  <text>筹码数：{{chip1}}</text>
+  <text>当前点数：{{lock1}}</text>
+  <text>牌型：{{type1}}</text>
+    <text>选择倍率：{{rate1}}</text>
+    </span>
+    
+  </image>
+  <button class="rolling1" style="width: 150rpx; height: 40rpx;" bindtap="dicechange1">
+  <text class="smalltext">掷骰子</text>
+  </button>
+  <button class="rolling1 after1" style="width: 150rpx; height: 40rpx;" bindtap="Ratetouzi" data-sno="0">
+    <text class="smalltext">倍率++</text>
+  </button>
+  <button class="rolling1 after3" style="width: 150rpx; height: 40rpx;" bindtap="Confirm" data-sno="0">
+    <text class="smalltext">确定</text>
+  </button>
+</view>
+<!--usr2-->>
+<view >
+  <image src="/image/外框.png" class="frame frame2" bindtap="Locktouzi">
+    <image src="{{diceimage[dicearray2[0]-1]}}" class="dice dice6" bindtap="Locktouzi" data-sno="5"></image>
+  <image src="{{diceimage[dicearray2[1]-1]}}" class="dice dice7" bindtap="Locktouzi" data-sno="6"></image>
+  <image src="{{diceimage[dicearray2[2]-1]}}" class="dice dice8" bindtap="Locktouzi" data-sno="7"></image>
+  <image src="{{diceimage[dicearray2[3]-1]}}" class="dice dice9 " bindtap="Locktouzi" data-sno="8"></image>
+  <image src="{{diceimage[dicearray2[4]-1]}}" class="dice dice10" bindtap="Locktouzi" data-sno="9"></image>
+  </image>
+  <image src="/image/浙里助企-底框.png" class="inframe2">
+  <span class="usr2message">
+    <text>用户2信息</text>
+  <text>筹码数：{{chip2}}</text>
+  <text>当前点数：{{lock2}}</text>
+  <text>牌型：{{type2}}</text>
+    <text>选择倍率：{{rate2}}</text>
+    </span>
+    
+  </image>
+  <button class="rolling2" style="width: 150rpx; height: 40rpx;" bindtap="dicechange2">
+  <text class="smalltext">掷骰子</text>
+  </button>
+  <button class="rolling2 after2" style="width: 150rpx; height: 40rpx;" bindtap="Ratetouzi" data-sno="5">
+    <text class="smalltext">倍率++</text>
+  </button>
+  <button class="rolling2 after4" style="width: 150rpx; height: 40rpx;" bindtap="Confirm" data-sno="5">
+    <text class="smalltext">确定</text>
+  </button>
+</view>
+<!--信息统计-->>
+<view>
+<image src="/image/人工智能.png" class="icon1"></image>
+<text class="text text1">当前总倍率：{{sumrate}}</text>
+<image src="/image/人工智能.png" class="icon2"></image>
+<text class="text text2" bindtap="nextround">下一局</text>
+<image src="/image/人工智能.png" class="icon3"></image>
+<text class="text text3">当前轮数：{{rounds}}/3</text>
+<image src="/image/人工智能.png" class="icon4"></image>
+<text class="text text4" bindtap="gameagain">重新开始</text>
+<image src="/image/人工智能.png" class="icon5"></image>
+<text class="text text5">当前局数：{{jushu}}/3</text>
+</view>
+<!--返回菜单-->>
+<view bindtap="tomenu">
+  <image  src="/image/人工智能.png" class="exitbutton" ></image>
+<text class="text exittext">退出游戏</text>
+</view>
+</view>
