@@ -1,7 +1,6 @@
 .rule{
-  width: 295px;
-  height: 465px;
-  align-items: center;
+  width: 690rpx;
+  height: 1088rpx;
 }
 .smalltext{
   font-size: 30rpx;

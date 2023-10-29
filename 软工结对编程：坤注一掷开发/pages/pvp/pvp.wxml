@@ -1,6 +1,6 @@
 <view  class="gamecontainer" style="background-image:url(/image/游戏背景.jpg);background-position: center;">
 
-<!--usr1-->>
+<!--usr1-->
 <view >
   <image src="/image/外框.png" class="frame frame1">
   <image src="{{diceimage[dicearray1[0]-1]}}" class="dice dice1" data-sno="0" bindtap="Locktouzi"></image>
@@ -30,7 +30,7 @@
     <text class="smalltext">确定</text>
   </button>
 </view>
-<!--usr2-->>
+<!--usr2-->
 <view >
   <image src="/image/外框.png" class="frame frame2" bindtap="Locktouzi">
     <image src="{{diceimage[dicearray2[0]-1]}}" class="dice dice6" bindtap="Locktouzi" data-sno="5"></image>
@@ -59,7 +59,7 @@
     <text class="smalltext">确定</text>
   </button>
 </view>
-<!--信息统计-->>
+<!--信息统计-->
 <view>
 <image src="/image/人工智能.png" class="icon1"></image>
 <text class="text text1">当前总倍率：{{sumrate}}</text>
@@ -72,7 +72,7 @@
 <image src="/image/人工智能.png" class="icon5"></image>
 <text class="text text5">当前局数：{{jushu}}/3</text>
 </view>
-<!--返回菜单-->>
+<!--返回菜单-->
 <view bindtap="tomenu">
   <image  src="/image/人工智能.png" class="exitbutton" ></image>
 <text class="text exittext">退出游戏</text>

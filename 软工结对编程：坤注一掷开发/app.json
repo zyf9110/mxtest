@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/pve/pve",
+    
     "pages/pvp/pvp",
     "pages/index/index",
-    
     "pages/rule/rule",
+    "pages/pve/pve",
+    
     
     
     "pages/logs/logs"
