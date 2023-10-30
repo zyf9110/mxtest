@@ -221,5 +221,5 @@
 .exittext{
   position: absolute;
   top: 670rpx;
-  right: 90rpx;
+  right: 110rpx;
 }

@@ -1,7 +1,7 @@
 <!--index.wxml-->
 
 
-<view class="container page" style="background-image:url(/image/游戏开始界面.jpg);background-size:100% 122% ;background-position:16px -10px" >
+<view class="background gamecontainer"  >
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" >

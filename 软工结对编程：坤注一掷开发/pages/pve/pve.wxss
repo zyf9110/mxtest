@@ -150,8 +150,8 @@
   font-weight: 500;
 }
 .icon1{
-  width: 20px;
-  height: 20px;
+  width: 46rpx;
+  height: 46rpx;
   position: absolute;
   top: 470rpx;
   left: 50rpx;
@@ -221,5 +221,5 @@
 .exittext{
   position: absolute;
   top: 670rpx;
-  right: 90rpx;
+  right: 110rpx;
 }

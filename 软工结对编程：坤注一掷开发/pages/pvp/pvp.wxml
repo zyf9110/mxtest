@@ -1,4 +1,4 @@
-<view  class="gamecontainer" style="background-image:url(/image/游戏背景.jpg);background-position: center;">
+<view  class="gamebackground gamecontainer">
 
 <!--usr1-->
 <view >
