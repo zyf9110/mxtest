@@ -2,7 +2,8 @@ import requests
 import re
 import json
 import string
-with open('bv号', 'r') as f:
+f0=open("cid.txt","w")
+with open('bv号.txt', 'r') as f:
     i=0
     line = f.readline()
     while line:
@@ -14,6 +15,9 @@ with open('bv号', 'r') as f:
         getcid = response.content.decode('unicode-escape')  # （line11——line16）编码转换时，先将以Unicode为中间编码，先用decode转换成Unicode编码
         cid = re.findall('"cid":(\d{6,10})', getcid)  # 通过正则表达式获取cid，获取6——10长度的数字,此时是列表
         print(cid[0])
+
+        f0.write(cid[0])
+        f0.write("\n")
         line = f.readline()
 
 

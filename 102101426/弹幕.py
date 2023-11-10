@@ -1,6 +1,6 @@
 import requests
 import re
-with open('cid', 'r') as f0:
+with open('cid.txt', 'r') as f0:
     line = f0.readline()
     while line:
         cid = line.strip()  # 输入视频号进入网页
